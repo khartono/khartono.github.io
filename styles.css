@@ -1,0 +1,31 @@
+body {
+    background-color: red;
+    font-size: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: Italic;
+    color: white;
+}
+
+a {
+    color: yellow;
+}
+
+/* THIS IS A NOTE EXAMPLE */
+
+p {
+    font-size: 20px;
+}
+
+.third {
+    font-family: Helvetica !important ;
+    font-size: 18px !important ;
+    
+}
+
+.special {
+    font-family: Futura;
+    color: black;
+    background-color: yellow;
+    font-size: 35px;
+}
+
