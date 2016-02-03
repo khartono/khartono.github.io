@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Time and Temperature Workshop</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript" src="coolclock.js"></script>
+        <script type="text/javascript" src="jquery.simpleWeather.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $.simpleWeather({
+                location: 'Tokyo, Japan',
+                woeid: '1118370',
+                unit: 'c',
+                success: function(weather)  {
+                html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+                html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+                html += '<li class="currently">'+weather.currently+'</li>';
+                html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+  
+                  $("#weather").html(html);
+                },
+                error: function(error) {
+                  $("#weather").html('<p>'+error+'</p>');
+                }
+              });
+            });
+
+        $(document).ready(function() {
+                $.simpleWeather({
+                location: 'Jakarta, ID',
+                woeid: '1047378',
+                unit: 'c',
+                success: function(weather)  {
+                html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+                html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+                html += '<li class="currently">'+weather.currently+'</li>';
+                html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+  
+              $("#weather2").html(html);
+            },
+            error: function(error) {
+              $("#weather2").html('<p>'+error+'</p>');
+            }
+          });
+        });
+        </script>
+    </head>
+
+    <body>
+    <center>There are people in this world that has experienced the future before us.</center>
+    <br><br>
+    <canvas id="clockid" class="CoolClock:Krysta:200:noSeconds:-5"></canvas>
+    
+    <canvas id="clockid2" class="CoolClock:swissRail:100:+8"></canvas>
+    
+
+    <div
+    <div id="weather"></div>
+    <br>
+    <div id="weather2"></div>
+
+    </body>
+
+</html>
