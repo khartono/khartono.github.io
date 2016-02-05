@@ -1,9 +1,21 @@
 body {
-    background-color: red;
-    font-size: 30px;
+    font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: Italic;
-    color: white;
+    color: black;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Futura;
+    text-transform: uppercase;
+    font-style: bold;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-style: oblique;
+    font-size: 18px;
 }
 
 a {

@@ -1,0 +1,92 @@
+body {
+    font-family: Helvetica;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.sidebar {
+    float: left;
+    position: fixed;
+    width: 330px;
+}
+
+.content-container {
+    float: right;
+    width: 900px;
+    padding: 5px;
+}
+
+.sidebar h2 {
+    font-family: Futura;
+    font-size: 14px;
+    color: black;
+    margin: 0 25 0;
+    text-transform: uppercase;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background: #0065cc;
+    color: black;
+}
+
+a {
+    font-family: ;
+    color: yellow;
+    font-style: oblique;
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+h1 a {
+    font-family: futura;
+    font-weight: bold;
+    color: pink;
+    font-size: 40px;
+    font-style: bold;
+}
+
+small {
+    clear: both;
+}
+
+.post-title {
+    font-size: 24px;
+    font-family: futura;
+    text-transform: uppercase;
+    color: #0065cc;
+}
+
+.posts h2 {
+    font-size: 18px;
+}
+
+.highlight {
+      width: 600px;
+      margin: 20px 20px ;
+      padding: 1px;
+      border-style: solid;
+      border-color: pink #0065cc #0065cc pink;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 a:hover {
+    text-decoration: line-through;
+    background-color: none;
+}
+
+a:hover {
+    text-decoration: line-through;
+    background-color: pink;
+}
+
+
