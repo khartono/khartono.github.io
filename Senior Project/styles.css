@@ -1,6 +1,69 @@
-body {
-    font-family: Helvetica;
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
+    font-size: 80px;
+    color: black;
+    width: 400px;
+    margin: 20px 20px 20px 80px;
+    display: inline-block;
 }
+
+.subtitle {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 300px 40px 80px 30px;
+    font-size: 50px;
+    float: right;
+    width: 500px;    
+    display: inline-block;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: none;
+    font-size: 25px;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+

@@ -1,21 +1,24 @@
 body {
-    font-size: 18px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: Italic;
+    font-size: 30px;
+    font-family: Helvetica-Light;
     color: black;
+    margin: 40px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 44px;
     font-family: Futura;
     text-transform: uppercase;
     font-style: bold;
+    width: 350px;
 }
+
 
 h2 {
     font-family: Helvetica;
-    font-style: oblique;
-    font-size: 18px;
+    font-style: none;
+    font-size: 21px;
+    width: 350px;
 }
 
 a {
@@ -31,13 +34,14 @@ p {
 .third {
     font-family: Helvetica !important ;
     font-size: 18px !important ;
+    font-weight: bold;
     
 }
 
 .special {
     font-family: Futura;
     color: black;
-    background-color: yellow;
+    background-color: lightblue;
     font-size: 35px;
 }
 

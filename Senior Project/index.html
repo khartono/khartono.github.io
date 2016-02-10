@@ -7,7 +7,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script type="text/javascript" src="coolclock.js"></script>
         <script type="text/javascript" src="jquery.simpleWeather.min.js"></script>
-
+        <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300italic,300,400italic' rel='stylesheet' type='text/css'>
+        
         <script type="text/javascript">
             $(document).ready(function() {
                 $.simpleWeather({
@@ -46,21 +48,91 @@
             }
           });
         });
+        
+             $(document).ready(function() {
+                $.simpleWeather({
+                location: 'Bangkok, Thailand',
+                woeid: '1225448',
+                unit: 'c',
+                success: function(weather)  {
+                html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+                html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+                html += '<li class="currently">'+weather.currently+'</li>';
+                html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+  
+                  $("#weather3").html(html);
+                },
+                error: function(error) {
+                  $("#weather3").html('<p>'+error+'</p>');
+                }
+              });
+            });
+        
+
         </script>
     </head>
 
     <body>
-    <center>There are people in this world that has experienced the future before us.</center>
+        
+    <h1>There are people in this world that has experienced the future before us.</h1>
+    <div class="subtitle">We are global citizens of the world. Get to know your neighbors.</div>
     <br><br>
-    <canvas id="clockid" class="CoolClock:Krysta:200:noSeconds:-5"></canvas>
     
-    <canvas id="clockid2" class="CoolClock:swissRail:100:+8"></canvas>
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+        
+ 
+  <div class="grid-item">
+      <canvas id="clockid" style="display:inline-block" class="CoolClock:Krysta:200:noSeconds:-5"></canvas>
+      <div id="weather"></div>
+  </div>
+  
+  <div class="grid-item grid-item--width2 grid-item--height2">
+      <canvas id="clockid2" style="display:inline-block" class="CoolClock:swissRail:200:+8"></canvas>
+      <div id="weather2"></div>
+ </div>
+  
+  <div class="grid-item grid-item--height3">
+      <canvas id="clockid3" class="CoolClock:chunkySwiss:200:+8"></canvas>
+      <div id="weather3"></div>
+ </div>
+ 
+  <div class="grid-item grid-item--height2">
+      <canvas id="clockid" style="display:inline-block" class="CoolClock:Krysta:200:+2.5"></canvas>
+      <div id="weather"></div>
+ </div>
+  <div class="grid-item grid-item--width3"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item grid-item--width2 grid-item--height3"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+</div> 
     
-
-    <div
     <div id="weather"></div>
-    <br>
+    
+    <canvas id="clockid2" style="display:inline-block" class="CoolClock:swissRail:200:+8"></canvas>
+    
     <div id="weather2"></div>
+    
+    <canvas id="clockid3" class="CoolClock:chunkySwiss:100:+8"></canvas>
+    
+    <div id="weather3"></div>
+   
+    <br>
+    
 
     </body>
 
