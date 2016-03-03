@@ -6,15 +6,16 @@ body {
 }
 
 .sidebar {
-    float: left;
     position: fixed;
+    top: 0;
+    left:0;
     width: 330px;
 }
 
 .content-container {
-    float: right;
     width: 900px;
     padding: 5px;
+    margin-left: 360px;
 }
 
 .sidebar h2 {
@@ -81,7 +82,7 @@ small {
 
 h1 a:hover {
     text-decoration: line-through;
-    background-color: none;
+    background-color: transparent;
 }
 
 a:hover {
@@ -90,3 +91,22 @@ a:hover {
 }
 
 
+.nt {
+    color: red;
+}
+
+.k {
+    color: pink;
+}
+
+.p {
+    color: green;
+}
+
+.post-date {
+    background-color: red;
+}
+
+.sidebar h2 {
+    background-color: green;
+}

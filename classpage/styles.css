@@ -6,13 +6,16 @@ body {
 }
 
 .sidebar {
-    float: left;
+    display: ;
     position: fixed;
     width: 330px;
 }
 
 .content-container {
-    float: right;
+    display: inline-block;
+    margin: 400px;
+    position: absolute;
+    clear: both;
     width: 900px;
     padding: 5px;
 }
@@ -89,4 +92,18 @@ a:hover {
     background-color: pink;
 }
 
+.language-css {
+    color: pink;
+}
 
+.k {
+    color: pink;
+}
+
+.p {
+    color: green;
+}
+
+.nc {
+    color: red;
+}
