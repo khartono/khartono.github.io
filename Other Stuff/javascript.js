@@ -1,6 +1,8 @@
 var text = ["Is a fairytale, they say","He was made of snow but the children know","How he came to life one day","Was a jolly happy soul","With a corncob pipe and a button nose",
 "And two eyes made out of coal"];
 
+document.getElementById("main").innerHTML = text;
+
 var currenttext = false;
 
 for (var t = 0; t < 80; t++) {
@@ -24,6 +26,7 @@ var randomtext = text[Math.floor(Math.random()*text.length)];
         randomtext = text[Math.floor(Math.random()*text.length)];
     }
     
+  
     currenttext = randomtext;
     
     
