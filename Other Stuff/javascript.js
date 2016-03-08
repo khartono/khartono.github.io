@@ -7,6 +7,7 @@ var currenttext = false;
 
 for (var t = 0; t < 80; t++) {
     $("body").append("<div class='snow'></div>");
+    $("body").append("<div class='flake'></div>");
 };
 
 $(".mybutton").click(function() {
@@ -19,6 +20,18 @@ $(".mybutton").click(function() {
     $(this).css("left", randleft);
   
 });
+
+$(".mybutton").click(function() {
+     
+    $(".flake").each(function() {
+    var randtop = Math.floor(Math.random() * 3000) + "px";
+    var randleft = Math.floor(Math.random() * 3000) + "px";
+    
+    $(this).css("top", randtop);
+    $(this).css("left", randleft);
+  
+});
+
 
 var randomtext = text[Math.floor(Math.random()*text.length)];
 
