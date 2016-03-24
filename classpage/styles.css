@@ -6,18 +6,16 @@ body {
 }
 
 .sidebar {
-    display: ;
     position: fixed;
+    top: 0;
+    left:0;
     width: 330px;
 }
 
 .content-container {
-    display: inline-block;
-    margin: 400px;
-    position: absolute;
-    clear: both;
     width: 900px;
     padding: 5px;
+    margin-left: 360px;
 }
 
 .sidebar h2 {
@@ -84,7 +82,7 @@ small {
 
 h1 a:hover {
     text-decoration: line-through;
-    background-color: none;
+    background-color: transparent;
 }
 
 a:hover {
@@ -92,8 +90,9 @@ a:hover {
     background-color: pink;
 }
 
-.language-css {
-    color: pink;
+
+.nt {
+    color: red;
 }
 
 .k {
@@ -104,6 +103,10 @@ a:hover {
     color: green;
 }
 
-.nc {
-    color: red;
+.post-date {
+    background-color: red;
+}
+
+.sidebar h2 {
+    background-color: green;
 }
