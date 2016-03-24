@@ -1,0 +1,107 @@
+h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  padding: 20px 50px 150px;
+  font-size: 14px;
+  text-align: center;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+#menubar {
+  bottom: 200px;
+}
+
+ul {
+  text-align: left;
+  display: inline;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+ul li {
+  font-family: 'Questrial', sans-serif;
+  color: #000;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+ul li:hover {
+  background: #EF444D;
+  color: #fff;
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+ul li ul li { 
+  background: #EF444D; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+
+ul li ul li:hover { background: #fff; color: #000;}
+
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#container {
+    /* Prevent vertical gaps */
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           10px;  
+}
+
+#container img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+}
