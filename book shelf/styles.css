@@ -90,6 +90,10 @@ ul li:hover ul {
   visibility: visible;
 }
 
+figcaption {
+  color: blue;
+}
+
 
 #container {
     /* Prevent vertical gaps */
@@ -99,11 +103,15 @@ ul li:hover ul {
     -moz-column-count:    4;
     -moz-column-gap:      0px;
     column-count:         4;
-    column-gap:           10px;  
+    column-gap:           50px;  
 }
 
 #container img {
-    /* Just in case there are inline attributes */
+    /* in case for inline attributes */
     width: 100% !important;
     height: auto !important;
+}
+
+img:hover {
+    opacity: .5;
 }

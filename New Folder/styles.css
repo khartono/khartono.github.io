@@ -1,0 +1,79 @@
+h1 {
+    font-family: 'Droid Serif', serif;
+    font-size: 45px;
+    color: black;
+    width: 190px;
+    position: fixed;
+    top: 30px;
+    right: 500px;
+    z-index: 10;
+}
+
+h1 a:link, a:visited {
+  color: black;
+}
+
+
+body {
+  background-image: url("table_assets/Table_Assets-01.png");
+  background-size: cover;
+  z-index: -10;
+  height: 100%;
+  font-family: 'Droid Serif', serif;
+  font-size: 14px;
+}
+
+.About {
+  position: absolute;
+  top: 65px;
+  left: 320px;
+  width: 15%;
+}
+
+.Home {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  width: 40%;
+}
+
+.Books img {
+  width: 35%;
+}
+
+.CWO {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
+
+.GG {
+  position: absolute;
+  top: 500px;
+  left: 10px;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+  transform: rotate(-10deg);
+}
+
+
+.ATLS {
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+  transform: rotate(-20deg);
+}
+
+.TKMB {
+  position: absolute;
+  top: 600px;
+  right: 50px;
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  transform: rotate(30deg);
+}
