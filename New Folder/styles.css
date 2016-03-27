@@ -3,10 +3,15 @@ h1 {
     font-size: 45px;
     color: black;
     width: 190px;
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 500px;
     z-index: 10;
+}
+
+h1 a:hover {
+  z-index: 100;
+  color: #B52D61;
 }
 
 h1 a:link, a:visited {
@@ -28,6 +33,13 @@ body {
   top: 65px;
   left: 320px;
   width: 15%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.About:hover {
+  z-index: 100;
+  width: 20%;
 }
 
 .Home {
@@ -35,6 +47,13 @@ body {
   top: 80px;
   right: 100px;
   width: 40%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.Home:hover {
+  z-index: 100;
+  width: 50%;
 }
 
 .Books img {
