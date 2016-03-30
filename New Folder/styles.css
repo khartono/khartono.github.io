@@ -1,6 +1,6 @@
 h1 {
     font-family: 'Droid Serif', serif;
-    font-size: 45px;
+    font-size: 42px;
     color: black;
     width: 190px;
     position: absolute;
@@ -18,15 +18,26 @@ h1 a:link, a:visited {
   color: black;
 }
 
+h2 {
+  font-family: 'Droid Serif', serif;
+  font-size: 20px;
+  line-height: 90%;
+  color: black;
+  width: 100px;
+  position: absolute;
+  right: 40px;
+}
 
 body {
-  background-image: url("table_assets/Table_Assets-01.png");
   background-size: cover;
-  z-index: -10;
   height: 100%;
   font-family: 'Droid Serif', serif;
+  font-weight: 700;
   font-size: 14px;
+  color: black;
 }
+
+/* MENU BAR */
 
 .About {
   position: absolute;
@@ -60,6 +71,8 @@ body {
   width: 35%;
 }
 
+/* BOOKS ON THE TABLE */
+
 .CWO {
   position: absolute;
   top: 200px;
@@ -72,7 +85,7 @@ body {
 .GG {
   position: absolute;
   top: 500px;
-  left: 10px;
+  left: 100px;
   -ms-transform: rotate(-10deg); /* IE 9 */
   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
   transform: rotate(-10deg);
@@ -91,8 +104,115 @@ body {
 .TKMB {
   position: absolute;
   top: 600px;
-  right: 50px;
+  left: 900px;
   -ms-transform: rotate(30deg); /* IE 9 */
   -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
   transform: rotate(30deg);
 }
+
+/* hover states for book titles and links */ 
+
+figcaption {
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 350px;
+  color: black;
+}
+
+.CWO:hover figcaption {
+  display: block;
+  z-index: 555;
+}
+
+.ATLS:hover figcaption {
+  display: block;
+  z-index: 555;
+}
+
+.GG:hover figcaption {
+  display: block;
+  z-index: 555;
+}
+
+.TKMB:hover figcaption {
+  display: block;
+  z-index: 555;
+}
+
+/* SQUARE TABLE BORDER */
+
+#top, #bottom, #left, #right {
+	background: #000;
+	position: fixed;
+	z-index: 1;
+}
+	
+#left, #right {
+	top: 0; bottom: 0;
+	width: 10px;
+}
+
+#left { left: 0; }
+
+#right { right: 0; }
+		
+#top, #bottom {
+	left: 0; right: 0;
+	height: 10px;
+}
+
+#top { top: 0; }
+
+#bottom { bottom: 0; }
+
+/* TABLE MENU BAR */
+
+.tablemenu {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.tablemenu img {
+  width: 130px;
+  height: auto;
+}
+
+.tablemenu img:hover {
+  z-index: 1;
+  width: 15%;
+}
+
+.abt {
+  position: absolute;
+  right: 500px;
+  height: 120px;
+}
+
+.hme {
+  position: absolute;
+  left: 20px;
+}
+
+/* FOR EACH OF BOOK COLLECTIONS */
+
+.container {
+    /* Prevent vertical gaps */
+    position: relative;
+    top: 180px;
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           50px;  
+}
+
+.container img {
+    /* in case for inline attributes */
+    width: 100% !important;
+    height: auto !important;
+}
+

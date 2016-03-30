@@ -115,3 +115,7 @@ figcaption {
 img:hover {
     opacity: .5;
 }
+
+img:hover figcaption {
+  
+}
