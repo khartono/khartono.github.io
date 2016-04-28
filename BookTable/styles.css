@@ -1,9 +1,17 @@
+body {
+  font-family: 'Eb Garamond', serif;
+  font-size: 14px;
+  color: #DD2824;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
     font-family: 'Chivo', sans-serif;
     font-size: 70px;
-    color: red;
+    color: #DD2824;
     width: 50%;
-    margin-top: 20vh;
+    padding-top: 5%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -11,36 +19,52 @@ h1 {
 }
 
 h1 a:hover {
-  z-index: 100;
+  display: none;
   text-decoration: line-through;
 }
 
-h1 a:link, a:visited {
-  color: black;
+h1 a:hover {
+  display: inline;
 }
 
+h1 a:link, a:visited {
+  color: #DD2824;
+}
 
-body {
+.header {
+  font-family: 'Chivo', sans-serif;
+    font-size: 16px;
+    display: table;
+    position: fixed;
+    z-index: 1001;
+    color: #DD2824;
+	padding-top:10px;
+	padding-left: 5px;
+}
+
+.header {
+	position: fixed;
+	height: 20px;
+	width: 100%;
+	z-index: 9;
+	text-align: left;
+
+}			
+
+.header {
+	top: 2px;
+}
+
+.section-1 {
   background: url('covers/Background_Books.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
   width: 100%;
-  height: 100%;
-  font-family: 'Eb Garamond', serif;
-  font-size: 14px;
-  color: black;
+  min-height: 100%;
 }
 
-h2 {
-  font-family: 'Droid Serif', serif;
-  font-size: 20px;
-  line-height: 90%;
-  color: black;
-  width: 100px;
-  position: absolute;
-  right: 100px;
-  padding-left: 40px;
-}
+
 
 /* MENU BAR */
 
@@ -69,56 +93,85 @@ h2 {
 
 .Home:hover {
   z-index: 100;
-  width: 50%;
 }
 
-.Books img {
-  width: 35%;
-  display: inline-block;
-  
-}
 
 .dropdown {
-    position: fixed;
-    top: 3%;
-    right: 20%;
-    border-style: solid;
-    border-color: pink #000000 #000000 pink;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    color: #DD2824;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
-.mybutton {
-    font-size: 16pt;
-    border-style: solid;
-    border-color: #000;
-    text-align: center;
-    padding: 10px;
-}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+.mybutton {
+	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background-color:#DD2824;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:13px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Chivo', sans-serif;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+
+.myButton:hover {
+	background-color:#dd2724;
+	color: pink;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
 /* BOOKS ON THE TABLE */
 
+.section-2 {
+	vertical-align: center;
+	position: fixed;
+	display: table;
+	padding-top: 23%;
+}
+
+.CWO,  .GG, .TKMB, .ATLS {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+.section-2 img {
+  width: 100%;
+}
+
 .CWO {
-  position: absolute;
-  top: 30%;
-  left: 30%;
   -ms-transform: rotate(7deg); /* IE 9 */
   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
   transform: rotate(7deg);
 }
 
 .GG {
-  position: absolute;
-  top: 500px;
-  left: 100px;
   -ms-transform: rotate(-10deg); /* IE 9 */
   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
   transform: rotate(-10deg);
@@ -126,18 +179,12 @@ h2 {
 
 
 .ATLS {
-  position: absolute;
-  top: 400px;
-  left: 500px;
   -ms-transform: rotate(-20deg); /* IE 9 */
   -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
   transform: rotate(-20deg);
 }
 
 .TKMB {
-  position: relative;
-  top: 400px;
-  left: 700px;
   -ms-transform: rotate(30deg); /* IE 9 */
   -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
   transform: rotate(30deg);
@@ -177,7 +224,7 @@ figcaption {
 /* SQUARE TABLE BORDER */
 
 #top, #bottom, #left, #right {
-	background: #000;
+	background: ##DD2824;
 	position: fixed;
 	z-index: 1;
 	margin: 6px 6px;
@@ -185,7 +232,7 @@ figcaption {
 	
 #left, #right {
 	top: 0; bottom: 0;
-	width: 5px;
+	width: 3px;
 }
 
 #left { left: 0; }
@@ -194,7 +241,7 @@ figcaption {
 		
 #top, #bottom {
 	left: 0; right: 0;
-	height: 5px;
+	height: 3px;
 }
 
 #top { top: 0; }
@@ -203,49 +250,37 @@ figcaption {
 
 /* TABLE MENU BAR */
 
-.tablemenu {
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
+.menubar {
+  top: 0;
+  position: relative;
+  width: 200px;
+  height: 400px;
 }
 
-.tablemenu img {
+.menubar img {
   width: 130px;
   height: auto;
 }
 
-.tablemenu img:hover {
-  z-index: 1;
-  width: 15%;
+.tablemenu1 {
+  position: absolute;
+  top: 0px;
+  left: 10px;
 }
 
-.abt {
-  position: relative;
-  top: 5%;
-  left: 3%;
-  width: 30%;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  right: 500px;
-  height: 120px;
+.tablemenu2 {
+  position: absolute;
+  top: 5px;
 }
 
-.hme {
-  position: relative;
-  top: 5%;
-  left: 10%;
-  width: 40%;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  right: 500px;
-  height: 120px;
-}
+
 
 /* FOR EACH OF BOOK COLLECTIONS */
 
 .container {
     /* Prevent vertical gaps */
     position: relative;
-    top: 300px;
+    top: 200px;
     line-height: 20px;
     -webkit-column-count: 4;
     -webkit-column-gap:   20px;
@@ -276,19 +311,244 @@ figcaption {
   vertical-align: top;
   width: 30%;
   top: 20%;
-  left: 15%;
+  left: 8%;
   -ms-transform: rotate(-20deg); /* IE 9 */
   -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
   transform: rotate(-20deg);
 }
 
 .subhead {
+  font-family: 'Chivo', sans-serif;
   position: relative;
   display: block;
   font-size: 30px;
   width: 300px;
 }
 
+h2 {
+  font-family: 'Eb Garamond', serif;
+  font-size: 26px;
+position: relative;
+  width: 300px;
+}
+
+
 .original:after. subhead {
   content: "BOOK TITLE";
+}
+
+/*!
+ * fullPage 2.7.8
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+ 
+ 
+html.fp-enabled,
+.fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
 }
