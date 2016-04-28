@@ -2,72 +2,98 @@
     <head>
         <title>Judge a Book by Its Cover</title>
     </head>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>  
-    <link href='https://fonts.googleapis.com/css?family=Roboto:900,700,400' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="fullPage_master/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
+    
+    
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#fullpage').fullpage({
+                        anchors: ['firstPage', 'secondPage'],
+                        sectionColor: ['#f2f2f2', 'whitesmoke', '#d6d6d6', '#7baabe'],
+                        css3: true
+                    });
+                });
+            </script>
     
     <body>
         
-        <!-- TABLE BORDER -->
+        <!-- TABLE BORDER
+        
             <div id="left"></div>
             <div id="right"></div>
             <div id="top"></div>
             <div id="bottom"></div>
-        
-        <h1><a href="index.html">JUDGE A BOOK BY ITS COVER</a></h1>
+         -->
         
         <!-- FOR THE MENU BAR -->
-            <div class="tablemenu">
-                <a href="About.html">
-                    <img class="Abt" src="table_assets/Table_Assets-11.png"></a>
-                <a href="index.html">    
-                    <img class="Hme" src="table_assets/Table_Assets-12.png"></a>
-            </div>  
+        <div id="fullpage">
             
-            <div class="dropdown">
-                  <span><ul>Browse Book Titles</span>
-                  <div class="dropdown-content">
-                        <li><a href="tkmb.html">How To Kill a Mockingbird</li></a>
-                        <li><a href="atls.html">Atlas Shrugged</li></a>
-                        <li><a href="cwo.html">Clockwork Orange</a></li>
-                        <li><a href="gg.html">The Great Gatsby</a></li>
-                </ul>
-              </div>
-            
+            <div class="section">
+                <h1><a href="index.html">DON'T</a> JUDGE A BOOK BY ITS COVER</h1>
+                
+                <div class="tablemenu">
+                    <a href="About.html">
+                        <img class="Abt" src="table_assets/Table_Assets-11.png"></a>
+                    <a href="index.html">    
+                        <img class="Hme" src="table_assets/Table_Assets-12.png"></a>
+                </div>  
+                
+                <div class="dropdown">
+                      <span><ul>Browse Book Titles</span>
+                      <div class="dropdown-content">
+                            <li><a href="tkmb.html">How To Kill a Mockingbird</li></a>
+                            <li><a href="atls.html">Atlas Shrugged</li></a>
+                            <li><a href="cwo.html">Clockwork Orange</a></li>
+                            <li><a href="gg.html">The Great Gatsby</a></li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
         
         <!-- FOR THE BOOKS ON THE TABLE -->
             
-            
-                <div class="books">
-                    <a href="cwo.html" class="CWO">
-                        <img src="table_assets/Table_Assets-02.png">
-                        <figcaption>A CLOCKWORK ORANGE by ANTHONY BURGESS</figcaption>
-                    </a>
-                
-                <div class="GG">
-                    <a href="gg.html">
-                        <img src="table_assets/Table_Assets-03.png">
-                        <figcaption>THE GREAT GATSBY by F. SCOTT FITZGERALD</figcaption>
-                    </a>
-                </div>        
+                <div class="section">
                     
-                <div class="ATLS">    
-                    <a href="atls.html">
-                        <img src="table_assets/Table_Assets-04.png">
-                        <figcaption>ATLAS SHRUGGED by AYN RAND</figcaption>
-                    </a>                
+                    <div class="books">
+                        <a href="cwo.html" class="CWO">
+                            <img src="table_assets/Table_Assets-02.png">
+                            <figcaption>A CLOCKWORK ORANGE by ANTHONY BURGESS</figcaption>
+                        </a>
+                    
+                    <div class="GG">
+                        <a href="gg.html">
+                            <img src="table_assets/Table_Assets-03.png">
+                            <figcaption>THE GREAT GATSBY by F. SCOTT FITZGERALD</figcaption>
+                        </a>
+                    </div>        
+                        
+                    <div class="ATLS">    
+                        <a href="atls.html">
+                            <img src="table_assets/Table_Assets-04.png">
+                            <figcaption>ATLAS SHRUGGED by AYN RAND</figcaption>
+                        </a>                
+                    </div>
+                    
+                    <div class="TKMB">
+                        <a href="tkmb.html">
+                            <img src="table_assets/Table_Assets-05.png">
+                            <figcaption>TO KILL A MOCKINGBIRD by HARPER LEE</figcaption>
+                        </a>
+                    </div>
+                    
+                    </div>
                 </div>
-                
-                <div class="TKMB">
-                    <a href="tkmb.html">
-                        <img src="table_assets/Table_Assets-05.png">
-                        <figcaption>TO KILL A MOCKINGBIRD by HARPER LEE</figcaption>
-                    </a>
-                </div>
-                
-            </div>
 
-
+        </div>
     <script type="text/javascript" src="javascript.js"></script>    
     
     </body>
