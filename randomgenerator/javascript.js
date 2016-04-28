@@ -1,5 +1,5 @@
 var text = ["Is a fairytale, they say","He was made of snow but the children know","How he came to life one day","Was a jolly happy soul","With a corncob pipe and a button nose",
-"And two eyes made out of coal"];
+"And two eyes made out of coal", "And then it's all about eh", "Like there should be this stuff", "Oh daily guys is here"];
 
 for (var t = 0; t < 80; t++) {
     $(".main").append("<div class='snow'></div>");
