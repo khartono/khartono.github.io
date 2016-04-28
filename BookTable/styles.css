@@ -3,9 +3,9 @@ h1 {
     font-size: 42px;
     color: black;
     width: 190px;
-    position: absolute;
-    top: 30px;
-    right: 500px;
+    position: fixed;
+    top: 2%;
+    right: 5%;
     z-index: 10;
 }
 
@@ -42,8 +42,8 @@ h2 {
 
 .About {
   position: absolute;
-  top: 65px;
-  left: 320px;
+  top: 10%;
+  left: 2%;
   width: 15%;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -56,8 +56,8 @@ h2 {
 
 .Home {
   position: absolute;
-  top: 80px;
-  right: 100px;
+  top: 10%;
+  left: 10%;
   width: 40%;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -70,14 +70,42 @@ h2 {
 
 .Books img {
   width: 35%;
+  display: inline-block;
+  
+}
+
+.dropdown {
+    position: fixed;
+    top: 3%;
+    right: 20%;
+    border-style: solid;
+    border-color: pink #000000 #000000 pink;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.mybutton {
+    font-size: 16pt;
+    border-style: solid;
+    border-color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* BOOKS ON THE TABLE */
 
 .CWO {
   position: absolute;
-  top: 200px;
-  left: 200px;
+  top: 30%;
+  left: 30%;
   -ms-transform: rotate(7deg); /* IE 9 */
   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
   transform: rotate(7deg);
@@ -103,9 +131,9 @@ h2 {
 }
 
 .TKMB {
-  position: absolute;
-  top: 600px;
-  left: 900px;
+  position: relative;
+  top: 400px;
+  left: 700px;
   -ms-transform: rotate(30deg); /* IE 9 */
   -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
   transform: rotate(30deg);
@@ -148,11 +176,12 @@ figcaption {
 	background: #000;
 	position: fixed;
 	z-index: 1;
+	margin: 6px 6px;
 }
 	
 #left, #right {
 	top: 0; bottom: 0;
-	width: 10px;
+	width: 5px;
 }
 
 #left { left: 0; }
@@ -161,7 +190,7 @@ figcaption {
 		
 #top, #bottom {
 	left: 0; right: 0;
-	height: 10px;
+	height: 5px;
 }
 
 #top { top: 0; }
@@ -186,14 +215,25 @@ figcaption {
 }
 
 .abt {
-  position: absolute;
+  position: relative;
+  top: 5%;
+  left: 3%;
+  width: 30%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   right: 500px;
   height: 120px;
 }
 
 .hme {
-  position: absolute;
-  left: 20px;
+  position: relative;
+  top: 5%;
+  left: 10%;
+  width: 40%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  right: 500px;
+  height: 120px;
 }
 
 /* FOR EACH OF BOOK COLLECTIONS */
@@ -201,19 +241,50 @@ figcaption {
 .container {
     /* Prevent vertical gaps */
     position: relative;
-    top: 180px;
-    line-height: 0;
+    top: 300px;
+    line-height: 20px;
     -webkit-column-count: 4;
-    -webkit-column-gap:   0px;
+    -webkit-column-gap:   20px;
     -moz-column-count:    4;
-    -moz-column-gap:      0px;
+    -moz-column-gap:      20px;
     column-count:         4;
-    column-gap:           50px;  
+    column-gap:           0px;  
 }
 
 .container img {
     /* in case for inline attributes */
     width: 100% !important;
     height: auto !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+/* ORIGINAL BOOK */
+
+.original {
+  width: 300px;
+  margin: auto;
+}
+
+.original img {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  top: 20%;
+  left: 15%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+  transform: rotate(-20deg);
+}
+
+.subhead {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  width: 300px;
+}
+
+.original:after. subhead {
+  content: "BOOK TITLE";
+}

@@ -12,6 +12,10 @@ body {
     width: 330px;
 }
 
+.mybutton {
+    font-size: 20pt;
+}
+
 .content-container {
     width: 900px;
     padding: 5px;
